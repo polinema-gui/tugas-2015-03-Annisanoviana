@@ -1,9 +1,13 @@
 Saya yang mempunyai identitas di bawah ini,
 NIM   : 1431140002
 Nama  : Annisa Noviana
+<<<<<<< HEAD
 Kelas : MI - 2E
+=======
+Kelas : 2MIE
+>>>>>>> origin/master
 
-Dengan ini menyatakan:
+Dengan ini menyatakan :
 
 Demi Allah (disesuaikan dengan agama dan kepercayaan masing-masing) saya
 mengerjakan tugas ini dengan jujur sesuai kontrak perkuliahan yang telah
