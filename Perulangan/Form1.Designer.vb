@@ -22,13 +22,38 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
         Me.AplikasiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProblemBintangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MatriksKalkulatorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProblemBintang = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MatriksKalkulator = New System.Windows.Forms.ToolStripMenuItem()
         Me.KeluarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
         Me.MenuStrip2.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'AplikasiToolStripMenuItem
+        '
+        Me.AplikasiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProblemBintang, Me.MatriksKalkulator, Me.KeluarToolStripMenuItem})
+        Me.AplikasiToolStripMenuItem.Name = "AplikasiToolStripMenuItem"
+        Me.AplikasiToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
+        Me.AplikasiToolStripMenuItem.Text = "Aplikasi"
+        '
+        'ProblemBintang
+        '
+        Me.ProblemBintang.Name = "ProblemBintang"
+        Me.ProblemBintang.Size = New System.Drawing.Size(169, 22)
+        Me.ProblemBintang.Text = "Problem Bintang"
+        '
+        'MatriksKalkulator
+        '
+        Me.MatriksKalkulator.Name = "MatriksKalkulator"
+        Me.MatriksKalkulator.Size = New System.Drawing.Size(169, 22)
+        Me.MatriksKalkulator.Text = "Matriks Kalkulator"
+        '
+        'KeluarToolStripMenuItem
+        '
+        Me.KeluarToolStripMenuItem.Name = "KeluarToolStripMenuItem"
+        Me.KeluarToolStripMenuItem.Size = New System.Drawing.Size(169, 22)
+        Me.KeluarToolStripMenuItem.Text = "Keluar"
         '
         'MenuStrip2
         '
@@ -38,31 +63,6 @@ Partial Class Form1
         Me.MenuStrip2.Size = New System.Drawing.Size(792, 24)
         Me.MenuStrip2.TabIndex = 1
         Me.MenuStrip2.Text = "MenuStrip2"
-        '
-        'AplikasiToolStripMenuItem
-        '
-        Me.AplikasiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProblemBintangToolStripMenuItem, Me.MatriksKalkulatorToolStripMenuItem, Me.KeluarToolStripMenuItem})
-        Me.AplikasiToolStripMenuItem.Name = "AplikasiToolStripMenuItem"
-        Me.AplikasiToolStripMenuItem.Size = New System.Drawing.Size(54, 20)
-        Me.AplikasiToolStripMenuItem.Text = "Aplikasi"
-        '
-        'ProblemBintangToolStripMenuItem
-        '
-        Me.ProblemBintangToolStripMenuItem.Name = "ProblemBintangToolStripMenuItem"
-        Me.ProblemBintangToolStripMenuItem.Size = New System.Drawing.Size(169, 22)
-        Me.ProblemBintangToolStripMenuItem.Text = "Problem Bintang"
-        '
-        'MatriksKalkulatorToolStripMenuItem
-        '
-        Me.MatriksKalkulatorToolStripMenuItem.Name = "MatriksKalkulatorToolStripMenuItem"
-        Me.MatriksKalkulatorToolStripMenuItem.Size = New System.Drawing.Size(169, 22)
-        Me.MatriksKalkulatorToolStripMenuItem.Text = "Matriks Kalkulator"
-        '
-        'KeluarToolStripMenuItem
-        '
-        Me.KeluarToolStripMenuItem.Name = "KeluarToolStripMenuItem"
-        Me.KeluarToolStripMenuItem.Size = New System.Drawing.Size(169, 22)
-        Me.KeluarToolStripMenuItem.Text = "Keluar"
         '
         'Form1
         '
@@ -79,10 +79,10 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents MenuStrip2 As System.Windows.Forms.MenuStrip
     Friend WithEvents AplikasiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ProblemBintangToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents MatriksKalkulatorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ProblemBintang As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MatriksKalkulator As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents KeluarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MenuStrip2 As System.Windows.Forms.MenuStrip
 
 End Class
